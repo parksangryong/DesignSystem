@@ -3,6 +3,7 @@ import ErrorMessage from "./ErrorMessage";
 import IconButton from "./IconButton";
 
 interface DefaultTextFieldProps {
+  id: string;
   errorMessage: string;
   iconPath: string;
   iconAlt: string;
@@ -14,6 +15,7 @@ interface DefaultTextFieldProps {
 }
 
 const DefaultTextField = ({
+  id,
   errorMessage,
   iconPath,
   iconAlt,
@@ -33,18 +35,19 @@ const DefaultTextField = ({
     : "border-primary";
 
   return (
-    <div>
+    <div className="relative text-field">
       <div
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`text-primary border-b ${borderColor}`}
+        className={`text-primary border-b flex justify-between ${borderColor}`}
       >
         <input
+          id={id}
           type="text"
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className="outline-none"
+          className="outline-none flex-1"
         />
         {!!value && (
           <IconButton iconPath={iconPath} alt={iconAlt} onClick={iconClick} />

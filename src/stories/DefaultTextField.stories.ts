@@ -19,6 +19,7 @@ const meta = {
     onChange: { action: "onChange", description: "onChange 이벤트" },
     iconClick: { action: "iconClick", description: "아이콘 클릭 이벤트" },
     isError: { control: "boolean", description: "에러 여부" },
+    id: { control: "text", description: "아이디" },
   },
   args: {
     onChange: fn(),
@@ -31,6 +32,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    id: "email",
     errorMessage: "이메일을 입력해주세요.",
     iconPath: "/ic-public-delete-dark.svg",
     iconAlt: "icon",

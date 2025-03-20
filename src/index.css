@@ -64,3 +64,9 @@
 * {
   font-family: "Noto Sans";
 }
+
+@layer components {
+  .text-field > p {
+    position: absolute;
+  }
+}
