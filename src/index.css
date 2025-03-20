@@ -69,4 +69,7 @@
   .text-field > p {
     position: absolute;
   }
+  .navigation-title-wrapper > button {
+    margin-right: 14px;
+  }
 }
