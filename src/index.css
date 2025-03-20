@@ -12,6 +12,55 @@
   --color-social: #395997;
 }
 
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-2xl {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-3xl {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
 * {
   font-family: "Noto Sans";
 }
