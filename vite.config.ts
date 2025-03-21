@@ -36,7 +36,9 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    dts(),
+    dts({
+      tsconfigPath: path.resolve(__dirname, "tsconfig.app.json"),
+    }),
     viteStaticCopy({
       targets: [
         {
