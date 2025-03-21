@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "./components/Label";
 import DefaultTextField from "./components/DefaultTextField";
 import SolidButton from "./components/SolidButton";
+import TagList from "./components/TagList";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -13,6 +14,17 @@ function App() {
 
   return (
     <>
+      <div className="w-full flex justify-center items-center bg-primary h-[60px]">
+        <TagList
+          tagList={["Tag1", "Tag2", "Tag3", "Tag4", "Tag5"]}
+          onTagClick={(tag) => {
+            console.log(tag);
+          }}
+        />
+      </div>
+
+      <div className="my-6" />
+
       <Label htmlFor="email">이메일</Label>
       <DefaultTextField
         id="email"
