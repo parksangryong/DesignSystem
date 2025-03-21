@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Assets: Story = {
   args: {
-    iconPath: "/ic-asset-delete-dark.svg",
+    iconPath: "/icons/ic-asset-delete-dark.svg",
     iconAlt: "icon",
     text: "Category",
   },

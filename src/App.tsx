@@ -29,7 +29,7 @@ function App() {
       <DefaultTextField
         id="email"
         errorMessage="이메일을 입력해주세요."
-        iconPath="/ic-public-delete-dark.svg"
+        iconPath="/icons/ic-public-delete-dark.svg"
         iconAlt="delete"
         placeholder="이메일을 입력해주세요."
         value={email}
@@ -44,7 +44,7 @@ function App() {
       <DefaultTextField
         id="address"
         errorMessage="주소를 입력해주세요."
-        iconPath="/ic-public-delete-dark.svg"
+        iconPath="/icons/ic-public-delete-dark.svg"
         iconAlt="delete"
         placeholder="주소를 입력해주세요."
         value={address}

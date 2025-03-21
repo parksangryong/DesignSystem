@@ -27,8 +27,8 @@ const NavigationBar = ({
             alt="back-arrow"
             iconPath={
               isDark
-                ? "/ic-public-back-arrow-white.svg"
-                : "/ic-public-back-arrow-black.svg"
+                ? "/icons/ic-public-back-arrow-white.svg"
+                : "/icons/ic-public-back-arrow-black.svg"
             }
             onClick={onBackButtonClick}
           />
@@ -47,7 +47,9 @@ const NavigationBar = ({
         <IconButton
           alt="close"
           iconPath={
-            isDark ? "/ic-public-close-white.svg" : "/ic-public-close-black.svg"
+            isDark
+              ? "/icons/ic-public-close-white.svg"
+              : "/icons/ic-public-close-black.svg"
           }
           onClick={onCloseButtonClick}
         />

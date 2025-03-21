@@ -34,7 +34,7 @@ export const Primary: Story = {
   args: {
     id: "email",
     errorMessage: "이메일을 입력해주세요.",
-    iconPath: "/ic-public-delete-dark.svg",
+    iconPath: "/icons/ic-public-delete-dark.svg",
     iconAlt: "icon",
     placeholder: "이메일을 입력해주세요.",
     value: "",
