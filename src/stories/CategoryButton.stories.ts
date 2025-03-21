@@ -3,8 +3,6 @@ import { fn } from "@storybook/test";
 
 import CategoryButton from "../components/CategoryButton";
 
-import icAssetsDeleteDark from "../assets/ic-asset-delete-dark.svg";
-
 const meta = {
   title: "UI/CategoryButton",
   component: CategoryButton,
@@ -26,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Assets: Story = {
   args: {
-    iconPath: icAssetsDeleteDark,
+    iconPath: "/ic-asset-delete-dark.svg",
     iconAlt: "icon",
     text: "Category",
   },

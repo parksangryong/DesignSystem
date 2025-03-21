@@ -1,89 +1,11 @@
-@import "tailwindcss";
-
-@theme {
-  --color-primary: #1d2745;
-  --color-secondary: #1de5d4;
-  --color-tertiary: #1d2745;
-  --color-white: #ffffff;
-  --color-mono100: #f1f1f1;
-  --color-mono200: #bebebe;
-  --color-mono300: #d6d7d9;
-  --color-error: #d01e1e;
-  --color-social: #395997;
-  --color-dark-opacity: rgba(255, 255, 255, 0.1);
-}
-
-.text-xs {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-sm {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-base {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-lg {
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-xl {
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-2xl {
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-.text-3xl {
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
-* {
-  font-family: "Noto Sans";
-}
-
-@layer components {
-  .text-field > p {
-    position: absolute;
-  }
-  .navigation-title-wrapper > button {
-    margin-right: 14px;
-  }
-}
-
 /*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
-  :root,
-  :host {
+  :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-black: #000;
     --color-white: #ffffff;
     --spacing: 0.25rem;
@@ -121,33 +43,19 @@
   }
 }
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html,
-  :host {
+  html, :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(
-      --default-font-family,
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
-    );
+    font-family: var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" );
     font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
+    font-variation-settings: var( --default-font-variation-settings, normal );
     -webkit-tap-highlight-color: transparent;
   }
   body {
@@ -162,12 +70,7 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -176,37 +79,19 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b,
-  strong {
+  b, strong {
     font-weight: bolder;
   }
-  code,
-  kbd,
-  samp,
-  pre {
-    font-family: var(
-      --default-mono-font-family,
-      ui-monospace,
-      SFMono-Regular,
-      Menlo,
-      Monaco,
-      Consolas,
-      "Liberation Mono",
-      "Courier New",
-      monospace
-    );
-    font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(
-      --default-mono-font-variation-settings,
-      normal
-    );
+  code, kbd, samp, pre {
+    font-family: var( --default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace );
+    font-feature-settings: var( --default-mono-font-feature-settings, normal );
+    font-variation-settings: var( --default-mono-font-variation-settings, normal );
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub,
-  sup {
+  sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -232,33 +117,18 @@
   summary {
     display: list-item;
   }
-  ol,
-  ul,
-  menu {
+  ol, ul, menu {
     list-style: none;
   }
-  img,
-  svg,
-  video,
-  canvas,
-  audio,
-  iframe,
-  embed,
-  object {
+  img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
     vertical-align: middle;
   }
-  img,
-  video {
+  img, video {
     max-width: 100%;
     height: auto;
   }
-  button,
-  input,
-  select,
-  optgroup,
-  textarea,
-  ::file-selector-button {
+  button, input, select, optgroup, textarea, ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -297,27 +167,16 @@
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit,
-  ::-webkit-datetime-edit-year-field,
-  ::-webkit-datetime-edit-month-field,
-  ::-webkit-datetime-edit-day-field,
-  ::-webkit-datetime-edit-hour-field,
-  ::-webkit-datetime-edit-minute-field,
-  ::-webkit-datetime-edit-second-field,
-  ::-webkit-datetime-edit-millisecond-field,
-  ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button,
-  input:where([type="button"], [type="reset"], [type="submit"]),
-  ::file-selector-button {
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button,
-  ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -362,8 +221,7 @@
     flex: 1;
   }
   .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z)
-      var(--tw-skew-x) var(--tw-skew-y);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -506,7 +364,59 @@
     }
   }
 }
-
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-xl {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-2xl {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-3xl {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+* {
+  font-family: "Noto Sans";
+}
+@layer components {
+  .text-field > p {
+    position: absolute;
+  }
+  .navigation-title-wrapper > button {
+    margin-right: 14px;
+  }
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
