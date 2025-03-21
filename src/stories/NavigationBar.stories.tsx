@@ -46,6 +46,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    isDark: false,
     showBackButton: true,
     showCloseButton: true,
     showTitle: true,

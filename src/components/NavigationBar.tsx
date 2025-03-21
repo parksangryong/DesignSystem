@@ -20,7 +20,7 @@ const NavigationBar = ({
   onCloseButtonClick = () => {},
 }: NavigationBarProps) => {
   return (
-    <div className="w-full flex justify-between items-center">
+    <div className={`w-full flex justify-between items-center h-16 px-4 `}>
       <div className="flex items-center navigation-title-wrapper">
         {showBackButton && (
           <IconButton
@@ -33,7 +33,15 @@ const NavigationBar = ({
             onClick={onBackButtonClick}
           />
         )}
-        {showTitle && <h1 className="text-2xl !font-bold">{title}</h1>}
+        {showTitle && (
+          <h1
+            className={`text-2xl !font-bold ${
+              isDark ? "text-white" : "text-black"
+            }`}
+          >
+            {title}
+          </h1>
+        )}
       </div>
       {showCloseButton && (
         <IconButton
