@@ -45,6 +45,10 @@ export default defineConfig({
           src: "src/index.css", // 복사할 소스 파일을 지정합니다.
           dest: "", // 'dist' 내의 대상 디렉토리를 지정합니다.
         },
+        {
+          src: "src/styles.d.ts", // styles.d.ts 파일 추가
+          dest: "",
+        },
       ],
     }),
   ],

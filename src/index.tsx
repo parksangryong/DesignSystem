@@ -1,3 +1,5 @@
+import "./index.css";
+
 export { default as SolidButton } from "./components/SolidButton";
 export { default as CategoryButton } from "./components/CategoryButton";
 export { default as DefaultTextField } from "./components/DefaultTextField";

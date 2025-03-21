@@ -2,7 +2,7 @@
   "name": "mirr-ui",
   "private": false,
   "description": "Mirr UI Library for React",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
@@ -20,7 +20,10 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
     },
-    "./styles": "./dist/index.css"
+    "./styles": {
+      "types": "./dist/styles.d.ts",
+      "default": "./dist/index.css"
+    }
   },
   "scripts": {
     "dev": "vite",
